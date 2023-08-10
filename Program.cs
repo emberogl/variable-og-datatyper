@@ -10,10 +10,10 @@
             /// Der bliver udskrevet 81.6
             Console.WriteLine(length * width);
 
-            /// Der kan ikke implicit konverteres typen double til int, så der opstår fejl
+            /// Der opstår fejl da operationen width * length giver en decimal værdi, hvor int er kun hele tal
             int area = width * length;
 
-            /// Der opstår ikke fejl, da operationen width * length giver en decimal værdi
+            /// Der opstår ikke fejl, da operationen width * length giver en decimal værdi, som double kan bruge
             double d = width * length;
         }
     }
